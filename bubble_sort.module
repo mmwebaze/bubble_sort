@@ -1,0 +1,12 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function bubble_sort_theme($existing, $type, $theme, $path) {
+
+    return [
+        'bubblesort' => [
+            'variables' => ['bubble_sort_data' => NULL],
+        ],
+    ];
+}

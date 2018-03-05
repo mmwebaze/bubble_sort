@@ -1,0 +1,7 @@
+name: Bubble Sort
+type: module
+description: Module implementing a bubble sort algorithm
+core: 8.x
+package: Algorithms
+dependencies:
+  - block

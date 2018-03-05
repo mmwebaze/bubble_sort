@@ -1,0 +1,18 @@
+bootstrap.cdn:
+  version: 4.0.0
+  css:
+    theme:
+      https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css: { type: external, minified: true }
+
+bubble_sort:
+  css:
+    theme:
+      css/bubble_sort.css: {}
+  js:
+    js/table.js: {}
+    js/bubble_sort.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
+    - bubble_sort/bootstrap.cdn

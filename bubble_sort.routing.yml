@@ -1,0 +1,33 @@
+bubble_sort.settings:
+  path: '/admin/config/bubble_sort/settings'
+  defaults:
+    _form: '\Drupal\bubble_sort\Form\BubbleSortSettingsForm'
+    _title: 'Bubble Sort Settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+bubble_sort:
+  path: '/bubblesort/{processed}/{stringOfNumbers}'
+  defaults:
+    _controller: '\Drupal\bubble_sort\Controller\BubbleSortController::bubbleSort'
+    _title: 'Bubble Sort Simulation'
+    processed: 0
+    stringOfNumbers: 0
+  requirements:
+    _permission: 'access content'
+
+bubble_sort.result:
+  path: 'api/result'
+  defaults:
+    _controller: '\Drupal\bubble_sort\Controller\BubbleSortController::result'
+  methods: 'GET'
+  requirements:
+    _permission: 'access content'
+
+bubble_sort.admin:
+  path: '/admin/bubblesort'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Bubble Sort'
+  requirements:
+    _permission: 'access administration pages'

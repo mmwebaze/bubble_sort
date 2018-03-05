@@ -1,0 +1,4 @@
+services:
+  bubble_sort.random_generator:
+    class: Drupal\bubble_sort\Service\RandomGeneratorService
+    arguments: ['@config.factory']

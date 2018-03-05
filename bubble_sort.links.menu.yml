@@ -1,0 +1,13 @@
+bubble_sort.admin:
+  title: 'Bubble sort settings'
+  description: 'Administer and configure your Bubble Sort settings.'
+  route_name: 'bubble_sort.admin'
+  weight: -9
+  parent: 'system.admin'
+
+dhis.settings_dhis:
+  title: 'Bubble Sort Settings'
+  description: 'Configure various bubble sort settings'
+  route_name: 'bubble_sort.settings'
+  weight: 10
+  parent: 'bubble_sort.admin'
